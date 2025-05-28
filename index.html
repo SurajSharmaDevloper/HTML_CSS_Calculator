@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen"> 
+            <input class="input" type="text" id="input-screen" placeholder="Enter Digits">
+        </div>
+        <div class="keys">
+            <button class="key span" onclick="KeyToDisplay(this)">%</button>
+            <button class="key span" onclick="KeyToDisplay(this)">/</button>
+            <button class="key span" onclick="KeyToDisplay(this)">x</button>
+            <button class="key span" onclick="KeyToDisplay(this)">-</button>
+
+            <button class="key" onclick="KeyToDisplay(this)">7</button>
+            <button class="key" onclick="KeyToDisplay(this)">8</button>
+            <button class="key" onclick="KeyToDisplay(this)">9</button>
+            <button class="key span" onclick="KeyToDisplay(this)">+</button>
+
+            <button class="key" onclick="KeyToDisplay(this)">4</button>
+            <button class="key" onclick="KeyToDisplay(this)">5</button>
+            <button class="key" onclick="KeyToDisplay(this)">6</button>
+            <button class="key span" onclick="KeyToClear()">C</button>
+
+            <button class="key" onclick="KeyToDisplay(this)">1</button>
+            <button  class="key"onclick="KeyToDisplay(this)">2</button>
+            <button class="key" onclick="KeyToDisplay(this)">3</button>
+            <button class="key span" onclick="KeyToClear()">Ac</button>
+
+            <button class="key" onclick="KeyToDisplay(this)">0</button>
+            <button class="key" onclick="KeyToDisplay(this)">.</button>
+            <button class="key" onclick="KeyToAllClear()">,</button>
+            <button class="key span" onclick="KeyToCalc()">=</button>
+
+        </div>
+    </div>
+    
+</body>
+</html>
